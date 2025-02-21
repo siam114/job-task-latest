@@ -52,7 +52,6 @@ const Tasks = () => {
         )}
       </div>
 
-     <div>
      <Tabs tabs={TABS} setSelected={setSelected}>
         {!status && (
           <div className='w-full flex justify-between gap-4 md:gap-x-12 py-4'>
@@ -73,7 +72,6 @@ const Tasks = () => {
           </div>
         )}
       </Tabs>
-     </div>
 
       <AddTask open={open} setOpen={setOpen} />
     </div>
