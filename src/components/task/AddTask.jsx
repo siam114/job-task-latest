@@ -12,7 +12,7 @@ import Button from "../Button";
 const LISTS = ["TODO", "IN PROGRESS", "COMPLETED"];
 const PRIORIRY = ["HIGH", "MEDIUM", "NORMAL", "LOW"];
 
-const uploadedFileURLs = [];
+// const uploadedFileURLs = [];
 
 const AddTask = ({ open, setOpen }) => {
   const task = "";

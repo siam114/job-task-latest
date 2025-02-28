@@ -229,7 +229,7 @@ const TaskDetails = () => {
   );
 };
 
-const Activities = ({ activity, id }) => {
+const Activities = ({ activity }) => {
   const [selected, setSelected] = useState(act_types[0]);
   const [text, setText] = useState("");
   const isLoading = false;
@@ -281,13 +281,13 @@ const Activities = ({ activity, id }) => {
           Add Activity
         </h4>
         <div className='w-full flex flex-wrap gap-5'>
-          {act_types.map((item, index) => (
+          {act_types.map((item) => (
             <div key={item} className='flex gap-2 items-center'>
               <input
                 type='checkbox'
                 className='w-4 h-4'
                 checked={selected === item ? true : false}
-                onChange={(e) => setSelected(item)}
+                onChange={() => setSelected(item)}
               />
               <p>{item}</p>
             </div>
